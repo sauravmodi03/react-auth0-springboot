@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: oauth2-resource-auth0
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-chx8zaff25g54qhu.us.auth0.com/
+          jwk-set-uri: https://dev-chx8zaff25g54qhu.us.auth0.com/.well-known/jwks.json
+          jws-algorithms: RS256
+#          audiences:
+#            - "http://localhost:9000"
+#            - "https://dev-chx8zaff25g54qhu.us.auth0.com/userinfo"
+server:
+  port: 9000
